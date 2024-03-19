@@ -1,16 +1,9 @@
 package cp1_2024_sem2_DBE.cp1.Service;
 
 import cp1_2024_sem2_DBE.cp1.Entity.Livro;
-import cp1_2024_sem2_DBE.cp1.Entity.LivroDto;
-import cp1_2024_sem2_DBE.cp1.Entity.LivroMapper;
 import cp1_2024_sem2_DBE.cp1.Repository.LivroRepository;
 import cp1_2024_sem2_DBE.cp1.Service.Strategy.ClassificarPorAtributoStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

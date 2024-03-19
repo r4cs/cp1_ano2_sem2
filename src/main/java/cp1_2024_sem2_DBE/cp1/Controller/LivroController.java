@@ -3,18 +3,14 @@ package cp1_2024_sem2_DBE.cp1.Controller;
 import cp1_2024_sem2_DBE.cp1.Entity.Livro;
 import cp1_2024_sem2_DBE.cp1.Entity.LivroDto;
 import cp1_2024_sem2_DBE.cp1.Entity.LivroMapper;
-import cp1_2024_sem2_DBE.cp1.Repository.LivroRepository;
 import cp1_2024_sem2_DBE.cp1.Service.LivroService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
@@ -22,13 +18,10 @@ import java.util.stream.Collectors;
 public class LivroController {
 
     private final LivroService livroService;
-    private final LivroRepository livroRepository;
 
     @Autowired
-    public LivroController(LivroService livroService,
-                           LivroRepository livroRepository) {
+    public LivroController(LivroService livroService) {
         this.livroService = livroService;
-        this.livroRepository = livroRepository;
     }
 
     @GetMapping

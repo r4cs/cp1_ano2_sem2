@@ -2,7 +2,6 @@ package cp1_2024_sem2_DBE.cp1.Service.Strategy;
 
 import cp1_2024_sem2_DBE.cp1.Entity.Livro;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
